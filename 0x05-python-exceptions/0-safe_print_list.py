@@ -12,7 +12,7 @@ def safe_print_list(my_list=[], x=0):
                 try:
                         print(f'{element}', end='')
                         elements_printed += 1
-                except exception as e:
+                except Exception as e:
                         print(e)
                 if elements_printed == x:
                         print()
