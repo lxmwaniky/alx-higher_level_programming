@@ -1,0 +1,17 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+==== Test for expected behaviour ====
+
+>>> say_my_name("John", "Smith")
+My name is John Smith
+>>> say_my_name("Bob")
+My name is Bob 
+
+# Test for cases when the name is not a string
+
+>>> say_my_name(str(56), "Street")
+My name is 56 Street
+>>> say_my_name(str(['I', 'prefer', 'lists']), "in Python")
+My name is ['I', 'prefer', 'lists'] in Python
+>>> say_my_name("&@&", "()")
+My name is &@& ()
