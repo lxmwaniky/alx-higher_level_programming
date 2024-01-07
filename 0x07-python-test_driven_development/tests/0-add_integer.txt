@@ -1,0 +1,36 @@
+=== First we import the module ===
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+=== Test for Math Correctness ===
+
+>>> add_integer(1, 2)
+3
+>>> add_integer(100, -2)
+98
+>>> add_integer(2)
+100
+>>> add_integer(100.3, -2)
+98
+
+=== Check for Edge Cases ===
+
+Case1: Passing Strings as arguments
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer("ALX", "School")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+Case2: Passing None as an argument
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(4, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
