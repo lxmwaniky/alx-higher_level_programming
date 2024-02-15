@@ -1,3 +1,3 @@
--- show full description of the first_table
+-- show full description of the table
 
-SHOW COLUMNS FROM first_table;
+SELECT * FROM first_table;
